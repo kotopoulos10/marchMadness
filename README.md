@@ -13,7 +13,8 @@ This is the notebook submitted to the [2022 Kaggle March Machine Learning Mania 
 
 ## Methedology Overview
 * First, I calculated metrics (score, posessions, pts/posession, efg%, ft%, tov%, ast%, reb%) for each game since 2003.
-* I then used that df to calculate season totals for each team for seasons > 2003.
-* For each tournament game, I added the season totals for the winning team and losing team as well as their Ken Pom AdjO, AdjD, Tempo, Luck and SOS.
-* Finally, I split the data into a train and test set and fed these two sets into the PyCaret model which produced the submission file. 
+* I then used that data to calculate season totals for each team since 2003.
+* Then, for each tournament game, I added the season totals for the winning team and losing team as well as their Ken Pom AdjO, AdjD, Tempo, Luck and SOS.
+* I split the tournament data into a train and test and created a PyCaret model, optimising for Log Loss.  
+* I repeated the same process for the 2022 season and fed the sumbission file into the PyCaret model, which produced predictions foe every possible 2022 NCAA March Madness game.
 
